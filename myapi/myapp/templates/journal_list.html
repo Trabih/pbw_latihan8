@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>List of Journals</title>
+</head>
+<body>
+    <h1>List of Journals</h1>
+    <h2>Token : {{ token }}</h2>
+    <ul>
+        {% for journal in journals %}
+            <li>{{ journal.title }} by {{ journal.author }} ({{ journal.year }})</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
